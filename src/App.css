@@ -73,10 +73,18 @@ width: 40%;
 
 .servicos ul{
   position: absolute;
-  margin-top: 2px;
+  margin-top: 0.6%;
+  background-color: rgb(199, 214, 223);
 }
 .servicos ul li{
   display:flex;
+  padding-top: 10%;
+  transition: all o.1s;
+  width:100%;
+}
+.servicos ul li:hover{
+  background-color: rgb(255, 255, 255);
+
 }
 .servicos{
   display: flex;
@@ -87,5 +95,49 @@ width: 40%;
   width: 40%;
 }
 .servicos button{
+  background-color: rgb(199, 214, 223);
   border-radius:10px;
+  border-style: none;
+}
+.filtro{
+  display: flex;
+  
+  position: absolute;
+  margin-top:0.2%;
+}
+.filtro label{
+  width: 100%;
+  justify-content:space-around;
+  
+}
+.apresentacao{
+  margin-top: 10%;
+}
+/* cards*/
+
+.servicos .informatica .eleminformatica .container{
+  display: flex;
+  position:absolute;
+  margin-top:200%;
+  margin-left:-580%;
+  width: 1000%;
+  background-color: #000440;
+}
+.container .produto{
+  
+  margin:5%;
+  width:100%;
+  height:100%;
+  background-color: aqua;
+  
+}
+.container .produto img{
+  max-width:100%;
+  max-height:100%;
+}
+.container .produto .minicones{
+  display: flex;
+  background-color: blueviolet;
+  justify-content: end;
+  height: 40px;
 }
