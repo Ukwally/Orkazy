@@ -114,7 +114,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <div className="cabcima">
-        <h1>Shopping</h1>
+        <h1>Or-Kazy</h1>
         <div>
         <button className="login" > LogIn</button>
         <button className="inscrever"> Inscrever-se</button>
