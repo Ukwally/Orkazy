@@ -192,7 +192,6 @@ function App() {
       </header>
 
       <div className='apresentacao'>
-      <TabelaFiltravel productos={PRODUCTOS}/>;
       </div>
       
     </div>
