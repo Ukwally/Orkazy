@@ -170,3 +170,15 @@ border:none;
   justify-content: end;
   height: 30px;
 }
+footer{
+
+  background-color: rgb(102, 102, 255);
+  height: 10%;
+  margin-top:70%;
+
+}
+footer p{
+color:#ecedfa;
+padding: 2%;
+  
+}

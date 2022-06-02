@@ -30,7 +30,7 @@ function LinhaDeProduto({ producto }) {
 
 function TabelaDeProduto({ productos }) {
   const rows = [];
-  let lastCategory = null;
+  let lastCategory =null;
 
   productos.forEach((producto) => {
     if (producto.categoria !== lastCategory) {
@@ -192,7 +192,12 @@ function App() {
       </header>
 
       <div className='apresentacao'>
+      
       </div>
+      <footer>
+      <p>Políticas</p>
+      </footer>
+      
       
     </div>
 
