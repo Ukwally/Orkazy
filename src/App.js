@@ -33,7 +33,7 @@ function TabelaDeProduto({ productos }) {
   let lastCategory = null;
 
   productos.forEach((producto) => {
-    if (producto.categoria!== lastCategory) {
+    if (producto.categoria !== lastCategory) {
       rows.push(
         <LinhaDeCategoria
           categoria={producto.categoria}
@@ -68,7 +68,7 @@ function BarraPesquisa() {
       <label className='filtro'>
         <input type="checkbox"  />
         {' '}
-        Mostrar apenas disponíveis
+        Apenas disponíveis
       </label>
     </form>
   );
@@ -83,26 +83,31 @@ function TabelaFiltravel({ productos }) {
 }
 const PRODUCTOS = [
   //informatica
-  {categoria: "informatica",subcategoria:"computador", preco: "kz300k", stoque: false,nome: "lenovo"},
-  {categoria: "informatica",subcategoria:"computador", preco: "kz300k", stoque: false,nome: "HP"},
-  {categoria: "informatica",subcategoria:"telemovel", preco: "kz80k", stoque: false,nome: "vivo"},
-  {categoria: "informatica",subcategoria:"telemovel", preco: "kz100k", stoque: false,nome: "Samsung"},
+  {categoria: "informatica",subcategoria:"computador", preco: "kz300k", stoque: true,nome: "lenovo"},
+  {categoria: "informatica",subcategoria:"computador", preco: "kz300k", stoque: true,nome: "HP"},
+  {categoria: "informatica",subcategoria:"telemovel", preco: "kz80k", stoque: true,nome: "vivo"},
+  {categoria: "informatica",subcategoria:"telemovel", preco: "kz100k", stoque: true,nome: "Samsung"},
   {categoria: "informatica",subcategoria:"carregador", preco: "kz12k", stoque: false,nome: "carregador lenovo"},
   {categoria: "informatica",subcategoria:"carregador", preco: "kz6k", stoque: false,nome: "carregador samsung"},
   //restauraçao
-  {categoria: "restauracao",subcategoria:"bebidas", preco: "kz 1k", stoque: false,nome: "sumo de laranja"},
-  {categoria: "restauracao",subcategoria:"bebidas", preco: "kz 1k", stoque: false,nome: "cocacola"},
-  {categoria: "restauracao",subcategoria:"produtos pasteleiros", preco: "kz 1k", stoque: false,nome: "bolo de chocolate"},
+  {categoria: "restauracao",subcategoria:"bebidas", preco: "kz 1k", stoque: true,nome: "sumo de laranja"},
+  {categoria: "restauracao",subcategoria:"bebidas", preco: "kz 1k", stoque: true,nome: "cocacola"},
+  {categoria: "restauracao",subcategoria:"produtos pasteleiros", preco: "kz 1k", stoque: true,nome: "bolo de chocolate"},
   {categoria: "restauracao",subcategoria:"produtos pasteleiros", preco: "kz 1k", stoque: false,nome: "pastel de natas"},
   {categoria: "restauracao",subcategoria:"cusinhados", preco: "kz 10k", stoque: false,nome: "bacalhau com natas"},
   {categoria: "restauracao",subcategoria:"cusinhados", preco: "kz 10k", stoque: false,nome: "lazanha"},
   //serviços
   {categoria: "servicos",subcategoria:"frio", preco: "kz 10k", stoque: false,nome: "AC"},
-  {categoria: "servicos",subcategoria:"frio", preco: "kz 10k", stoque: false,nome: "geleira"},
-  {categoria: "servicos",subcategoria:"radio", preco: "kz 10k", stoque: false,nome: "TV"},
-  {categoria: "servicos",subcategoria:"radio", preco: "kz 10k", stoque: false,nome: "computadores"},
+  {categoria: "servicos",subcategoria:"frio", preco: "kz 10k", stoque: true,nome: "geleira"},
+  {categoria: "servicos",subcategoria:"radio", preco: "kz 10k", stoque: true,nome: "TV"},
+  {categoria: "servicos",subcategoria:"radio", preco: "kz 10k", stoque: true,nome: "computadores"},
 ]
 // colar no App <TabelaFiltravel productos={PRODUCTOS} />;
+
+// let valor=document.getElementById(produto)
+
+//function Apresentar(){
+//}
  
 function App() {
   return (
@@ -111,14 +116,14 @@ function App() {
       <div className="cabcima">
         <h1>Shopping</h1>
         <div>
-        <button> LogIn</button>
-        <button> Increver-se</button>
+        <button className="login" > LogIn</button>
+        <button className="inscrever"> Inscrever-se</button>
         </div>
       </div>
 
       <div className="cabmeio">
-        <p>Explorar</p>
-        <p>Carreiras</p>
+        <h4>Explorar</h4>
+        <h4>Carreiras</h4>
       </div>
 
       <div className="cabbaixo">
@@ -128,8 +133,8 @@ function App() {
           
           <button className='informatica'> Informática 
           <ul className='eleminformatica'>
-            <li>Computador
-              <div className='container'>
+            <li  >Computador
+              <div className='container' >
                 <div className='produto'>
                 <img src={y71} />
                 <h4><b>HP-W11-intel</b></h4>
@@ -187,6 +192,7 @@ function App() {
       </header>
 
       <div className='apresentacao'>
+      <TabelaFiltravel productos={PRODUCTOS}/>;
       </div>
       
     </div>
