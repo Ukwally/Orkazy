@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Orkazy/static/css/main.fd6b6253.css",
+    "main.js": "/Orkazy/static/js/main.8ec38211.js",
+    "static/js/787.eaad36ba.chunk.js": "/Orkazy/static/js/787.eaad36ba.chunk.js",
+    "static/media/y71.jpg": "/Orkazy/static/media/y71.ecba74353175da217b43.jpg",
+    "index.html": "/Orkazy/index.html",
+    "main.fd6b6253.css.map": "/Orkazy/static/css/main.fd6b6253.css.map",
+    "main.8ec38211.js.map": "/Orkazy/static/js/main.8ec38211.js.map",
+    "787.eaad36ba.chunk.js.map": "/Orkazy/static/js/787.eaad36ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd6b6253.css",
+    "static/js/main.8ec38211.js"
+  ]
+}
